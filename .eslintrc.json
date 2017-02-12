@@ -4,5 +4,10 @@
         "react",
         "jsx-a11y",
         "import"
-    ]
+    ],
+    "rules": {
+    "linebreak-style": 0,
+    "no-plusplus": 0,
+    "max-len": 0
+    }
 }

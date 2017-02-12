@@ -10,7 +10,7 @@ The goal state of the app is to use the same application year-over-year with min
 
 ## Prerequisites
 
-* Ensure Node.js and npm are installed. If not, Node can be installed from [here](https://nodejs.org/en/ "Node.js.org").
+* Ensure Node.js (6 or later) and npm are installed. If not, Node can be installed from [here](https://nodejs.org/en/ "Node.js.org").
 
 ## Quick Start
 
@@ -53,6 +53,7 @@ npm run build
 ```
 my-app/
   README.md
+  docs/
   node_modules/
   package.json
   public/
@@ -60,8 +61,10 @@ my-app/
     ic_vortex_clear.ico
   src/
     __tests__/
+    actions/
     components/
     css/
+    reducers/
     App.js
     index.js
     logo.svg
