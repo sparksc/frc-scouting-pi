@@ -23,8 +23,11 @@ class ScoutingHome extends Component {
         <UnsubmittedPanel />
 
 
-        { /* Below here are options strictly for Admin/Power users */ }
+      { /* Below here are options strictly for Admin/Power users */ }
+      <LinkContainer to={{ pathname: '/scoutinghome/scoutingformbuilder' }}>
         <Button bsStyle="success" bsSize="large" block>Create New Form</Button>
+      </LinkContainer>
+        
         <br />
 
         { /* Display Admin User's forms that are available for publishing to the team */ }

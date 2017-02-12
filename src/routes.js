@@ -9,6 +9,7 @@ import Login from './components/Login/Login';
 import PickList from './components/PickList/PickList';
 import ScoutingHome from './components/Scouting/ScoutingHome';
 import ScoutingForm from './components/Scouting/ScoutingForm';
+import ScoutingFormBuilder from './components/Scouting/ScoutingFormBuilder';
 import TeamViewer from './components/TeamViewer/TeamViewer';
 import NotFound from './components/NotFound/NotFound';
 
@@ -18,10 +19,9 @@ const Routes = props => (
       {/* Show the dashboard at / */}
       <IndexRoute component={Dashboard} />
       <Route path="/dashboard" component={Dashboard} />
-      <Route path="/scoutinghome" component={ScoutingHome}>
-        <IndexRoute component={ScoutingHome} />
-        <Route path="scoutingform" component={ScoutingForm} />
-      </Route>
+      <Route path="/scoutinghome" component={ScoutingHome} />
+      <Route path="/scoutinghome/scoutingform" component={ScoutingForm} />
+      <Route path="/scoutinghome/scoutingformbuilder" component={ScoutingFormBuilder} />
       <Route path="/teamviewer" component={TeamViewer} />
       <Route path="/picklist" component={PickList} />
       <Route path="/dataviewer" component={DataViewer} />

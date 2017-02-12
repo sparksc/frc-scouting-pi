@@ -1,6 +1,6 @@
 // @flow
 // src/components/Scouting/ScoutingForm.js
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { PageHeader } from 'react-bootstrap';
 import Form from 'react-jsonschema-form';
 
@@ -16,15 +16,11 @@ const schema = {
 
 const log = type => console.log.bind(console, type);
 
-class ScoutingForm extends Component {
-  // static propTypes = {}
-  // static defaultProps = {}
-  // state = {}
-
+class ScoutingFormBuilder extends Component {
   render() {
     return (
       <div>
-        <PageHeader>ScoutingForm <small>placeholder for submitting scouting forms</small></PageHeader>
+        <PageHeader>ScoutingFormBuilder <small>placeholder for creating a Scouting Form</small></PageHeader>
         <Form 
           schema={schema}
           onChange={log('changed')}
@@ -36,8 +32,4 @@ class ScoutingForm extends Component {
   }
 }
 
-// ScoutingForm.propTypes = {
-//   schema: PropTypes.object,
-// };
-
-export default ScoutingForm;
+export default ScoutingFormBuilder;
