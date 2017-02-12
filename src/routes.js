@@ -6,7 +6,7 @@ import App from './App';
 import Dashboard from './components/Dashboard/Dashboard';
 import DataViewer from './components/DataViewer/DataViewer';
 import Login from './components/Login/Login';
-import PickList from './components/PickList/PickList';
+import PickListHome from './components/PickList/PickListHome';
 import ScoutingHome from './components/Scouting/ScoutingHome';
 import ScoutingForm from './components/Scouting/ScoutingForm';
 import ScoutingFormBuilder from './components/Scouting/ScoutingFormBuilder';
@@ -23,7 +23,7 @@ const Routes = props => (
       <Route path="/scoutinghome/scoutingform" component={ScoutingForm} />
       <Route path="/scoutinghome/scoutingformbuilder" component={ScoutingFormBuilder} />
       <Route path="/teamviewer" component={TeamViewer} />
-      <Route path="/picklist" component={PickList} />
+      <Route path="/picklist" component={PickListHome} />
       <Route path="/dataviewer" component={DataViewer} />
       <Route path="*" component={NotFound} />
     </Route>

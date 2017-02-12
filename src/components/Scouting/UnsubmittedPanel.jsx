@@ -49,7 +49,7 @@ class UnsubmittedPanel extends Component {
     // Map through forms and return linked forms
     const formNode = this.state.forms.map((form) => {
       return (
-        <ListGroupItem onClick={alertClicked}>
+        <ListGroupItem key={form.id} onClick={alertClicked}>
           <Row className="show-grid">
             <Col xs={4} md={4}><strong>Created: </strong>{form.created}</Col>
             <Col xs={6} md={6}><strong>Regional: </strong>{form.regional}</Col>

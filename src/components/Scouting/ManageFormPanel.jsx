@@ -57,7 +57,7 @@ class ManageFormPanel extends Component {
     // Map through forms and return linked forms
     const formNode = this.state.forms.map((form) => {
       return (
-        <ListGroupItem onClick={alertClicked}>
+        <ListGroupItem key={form.id} onClick={alertClicked}>
           <Row className="show-grid">
             <Col xs={3} md={3}>{form.name}</Col>
             <Col xs={3} md={3}><strong>Last Modified: </strong>{form.modified}</Col>
