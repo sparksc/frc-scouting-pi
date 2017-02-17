@@ -96,3 +96,5 @@ Notes from the [create-react-app](https://github.com/facebookincubator/create-re
 * [Flow](https://flowtype.org/)
 * [ESLint](http://eslint.org/)
 * [Airbnb Javascript Style Guide()](https://www.npmjs.com/package/eslint-config-airbnb)
+* [Griddle](http://griddlegriddle.github.io/Griddle/index.html)
+* [react-images-uploader](https://github.com/aleksei0807/react-images-uploader)

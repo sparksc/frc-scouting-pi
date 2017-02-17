@@ -15,6 +15,7 @@
     "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
+    "griddle-react": "^0.7.1",
     "pouchdb": "^6.1.2",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
