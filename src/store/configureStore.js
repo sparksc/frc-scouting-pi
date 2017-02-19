@@ -1,17 +1,27 @@
-import { persistentStore } from 'redux-pouchdb';
 import PouchDB from 'pouchdb';
+import PouchMiddleware from 'pouch-redux-middleware';
+import { createStore, applyMiddleware } from 'redux';
+import * as types from '../constants/ActionTypes';
+import rootReducer from '../reducers';
 
-const db = new PouchDB('frc_scoutingpi');
+export default function configureStore() {
+  const db = new PouchDB('frc_scoutingpi');
 
-// optional
-const applyMiddlewares = applyMiddleware(
-    thunkMiddleware,
-    loggerMiddleware,
-);
+  const pouchMiddleware = PouchMiddleware({
+    path: '/todos',
+    db,
+    actions: {
+      remove: doc => { return { type: types.DELETE_TODO, id: doc._id }; },
+      insert: doc => { return { type: types.INSERT_TODO, todo: doc }; },
+      update: doc => { return { type: types.UPDATE_TODO, todo: doc }; },
+    },
+  });
 
-const createStoreWithMiddleware = compose(
-    applyMiddlewares,
-    persistentStore(db),
-)(createStore);
+  const store = createStore(
+    rootReducer,
+    undefined,
+    applyMiddleware(pouchMiddleware),
+  );
 
-const store = createStoreWithMiddleware(reducer, initialState);
+  return store;
+}

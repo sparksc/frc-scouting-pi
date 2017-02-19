@@ -54,18 +54,16 @@ class PickListHome extends Component {
 
   render() {
     // Map through pick lists and return linked pick lists
-    const pickListNode = this.state.picklists.map((picklist) => {
-      return (
-        <ListGroupItem key={picklist.id} header={picklist.name} href="#">
-          <Row className="show-grid">
-            <Col xs={3} md={2}><strong>Season: </strong>{picklist.season}</Col>
-            <Col xs={3} md={4}><strong>Regional: </strong>{picklist.regional}</Col>
-            <Col xs={3} md={3}><strong>Last Modified: </strong>{picklist.modified}</Col>
-            <Col xs={3} md={3}><strong>Modified By: </strong>{picklist.modifiedBy}</Col>
-          </Row>
-        </ListGroupItem>
-      );
-    });
+    const pickListNode = this.state.picklists.map(picklist => (
+      <ListGroupItem key={picklist.id} header={picklist.name} href="#">
+        <Row className="show-grid">
+          <Col xs={3} md={2}><strong>Season: </strong>{picklist.season}</Col>
+          <Col xs={3} md={4}><strong>Regional: </strong>{picklist.regional}</Col>
+          <Col xs={3} md={3}><strong>Last Modified: </strong>{picklist.modified}</Col>
+          <Col xs={3} md={3}><strong>Modified By: </strong>{picklist.modifiedBy}</Col>
+        </Row>
+      </ListGroupItem>
+    ));
 
     return (
       <div>

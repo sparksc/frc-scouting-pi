@@ -11,6 +11,7 @@ import ScoutingHome from './components/Scouting/ScoutingHome';
 import ScoutingForm from './components/Scouting/ScoutingForm';
 import ScoutingFormBuilder from './components/Scouting/ScoutingFormBuilder';
 import TeamViewer from './components/TeamViewer/TeamViewer';
+import TeamDetail from './components/TeamViewer/TeamDetail';
 import NotFound from './components/NotFound/NotFound';
 
 const Routes = props => (
@@ -23,6 +24,7 @@ const Routes = props => (
       <Route path="/scoutinghome/scoutingform" component={ScoutingForm} />
       <Route path="/scoutinghome/scoutingformbuilder" component={ScoutingFormBuilder} />
       <Route path="/teamviewer" component={TeamViewer} />
+      <Route path="/teamviewer/teamdetail" component={TeamDetail} />
       <Route path="/picklist" component={PickListHome} />
       <Route path="/dataviewer" component={DataViewer} />
       <Route path="*" component={NotFound} />

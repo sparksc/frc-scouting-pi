@@ -1,6 +1,6 @@
 // @flow
 // src/components/Scouting/ScoutingForm.js
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { PageHeader } from 'react-bootstrap';
 import Form from 'react-jsonschema-form';
 

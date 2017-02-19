@@ -1,6 +1,10 @@
 // @flow
 import React, { Component } from 'react';
-import Griddle from 'griddle-react';
+import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
+
+const options = {
+  clearSearch: true,
+};
 
 class DataTable extends Component {
   render() {
@@ -34,7 +38,11 @@ class DataTable extends Component {
 
     return (
       <div>
-        <Griddle results={data} showFilter showSettings responsive />
+        <BootstrapTable data={data} options={options} striped hover condensed search multiColumnSearch>
+          <TableHeaderColumn dataField="year" dataSort width="90">Year</TableHeaderColumn>
+          <TableHeaderColumn dataField="name" isKey dataSort>Name</TableHeaderColumn>
+          <TableHeaderColumn dataField="location" dataSort>Location</TableHeaderColumn>
+        </BootstrapTable>
       </div>
     );
   }

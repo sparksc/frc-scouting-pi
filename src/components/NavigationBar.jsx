@@ -1,5 +1,4 @@
 // @flow
-
 import React, { Component } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 
