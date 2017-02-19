@@ -23,7 +23,7 @@ class ScoutingForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <PageHeader>ScoutingForm <small>placeholder for submitting scouting forms</small></PageHeader>
         <Form 
           schema={schema}

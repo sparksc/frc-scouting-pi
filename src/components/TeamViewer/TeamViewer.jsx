@@ -41,7 +41,7 @@ class TeamViewer extends Component {
     ];
 
     return (
-      <div>
+      <div className="container">
         <PageHeader>Team Viewer <small>View and compare teams based on collected data</small></PageHeader>
         <BootstrapTable data={teams} options={options} hover search multiColumnSearch>
           <TableHeaderColumn dataField="number" isKey dataSort>Number</TableHeaderColumn>

@@ -66,7 +66,7 @@ class PickListHome extends Component {
     ));
 
     return (
-      <div>
+      <div className="container">
         <PageHeader>Pick Lists</PageHeader>
 
         <ListGroup>

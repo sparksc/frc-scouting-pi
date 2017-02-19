@@ -10,7 +10,7 @@ import ManageFormPanel from './ManageFormPanel';
 class ScoutingHome extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <PageHeader>FRC Scouting</PageHeader>
         <LinkContainer to={{ pathname: '/scoutinghome/scoutingform' }}>
           <Button bsStyle="primary" bsSize="large" block>Start Match Scouting</Button>

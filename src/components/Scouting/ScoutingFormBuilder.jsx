@@ -19,7 +19,7 @@ const log = type => console.log.bind(console, type);
 class ScoutingFormBuilder extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <PageHeader>ScoutingFormBuilder <small>placeholder for creating a Scouting Form</small></PageHeader>
         <Form 
           schema={schema}

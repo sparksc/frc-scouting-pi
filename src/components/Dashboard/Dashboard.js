@@ -10,7 +10,7 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <PageHeader>Dashboard <small>A place to administrate the app</small></PageHeader>
       </div>
     );
