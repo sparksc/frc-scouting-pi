@@ -4,8 +4,10 @@ import { PageHeader } from 'react-bootstrap';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 
 const options = {
-  onRowClick(row) {
-    alert(`You clicked team: ${row.number}`);
+  onRowClick: (row) => {
+    console.log(`You selected team ${row.number}`);
+    const teamNumber = row._number;
+    this.context.router.transitionTo(`/teamviewer/${teamNumber}`);
   },
   clearSearch: true,
 };

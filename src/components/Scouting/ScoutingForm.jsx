@@ -25,7 +25,7 @@ class ScoutingForm extends Component {
     return (
       <div className="container">
         <PageHeader>ScoutingForm <small>placeholder for submitting scouting forms</small></PageHeader>
-        <Form 
+        <Form
           schema={schema}
           onChange={log('changed')}
           onSubmit={log('submitted')}

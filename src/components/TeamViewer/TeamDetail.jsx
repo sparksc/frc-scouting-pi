@@ -5,7 +5,7 @@ import { PageHeader } from 'react-bootstrap';
 function TeamDetail(props) {
   return (
     <div>
-      <PageHeader>Team {props.number} Details</PageHeader>
+      <PageHeader>Team {this.props.params.number} Details</PageHeader>
     </div>
   );
 }

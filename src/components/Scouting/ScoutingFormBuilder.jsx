@@ -1,32 +1,24 @@
 // @flow
-// src/components/Scouting/ScoutingForm.js
 import React, { Component } from 'react';
-import { PageHeader } from 'react-bootstrap';
-import Form from 'react-jsonschema-form';
-
-const schema = {
-  title: 'Todo',
-  type: 'object',
-  required: ['title'],
-  properties: {
-    title: { type: 'string', title: 'Title', default: 'A new task' },
-    done: { type: 'boolean', title: 'Done?', default: false },
-  },
-};
-
-const log = type => console.log.bind(console, type);
+import { Col, Grid, PageHeader, Panel } from 'react-bootstrap';
+import FormPanel from './FormPanel1';
+import QuestionWidgets from './QuestionWidgets';
 
 class ScoutingFormBuilder extends Component {
   render() {
     return (
       <div className="container">
-        <PageHeader>ScoutingFormBuilder <small>placeholder for creating a Scouting Form</small></PageHeader>
-        <Form 
-          schema={schema}
-          onChange={log('changed')}
-          onSubmit={log('submitted')}
-          onError={log('errors')}
-        />
+        <PageHeader>Scouting Form Builder</PageHeader>
+        <Grid>
+          <Col xs={12} md={10}>
+            <FormPanel />
+          </Col>
+          <Col xs={6} md={2}>
+            <Panel header={<h3 className="text-center"><i className="material-icons">add</i> Question</h3>}>
+              <QuestionWidgets />
+            </Panel>
+          </Col>
+        </Grid>
       </div>
     );
   }

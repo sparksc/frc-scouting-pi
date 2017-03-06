@@ -5,7 +5,7 @@ import { browserHistory } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme-superhero.css';
 // import 'bootstrap/dist/css/bootstrap-theme-flatly.css';
-import 'font-awesome/css/font-awesome.min.css';
+
 import 'react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
 import './css/index.css';
 

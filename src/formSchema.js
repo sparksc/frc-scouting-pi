@@ -1,6 +1,5 @@
-{
-  "type": 'object',
-  "properties": {
+FormSchema =
+  components [
     {
       id: 'text',
       icon: 'text-color',
@@ -24,75 +23,75 @@
       formData: {},
     },
     {
-      id: 'multilinetext',
-      icon: 'align-left',
-      label: 'Long text',
+      id: "multilinetext",
+      icon: "align-left",
+      label: "Long text",
       jsonSchema: {
-        type: 'string',
-        title: 'Edit me',
-        description: '',
-        default: '',
+        type: "string",
+        title: "Edit me",
+        description: "",
+        default: "",
       },
       uiSchema: {
-        'ui:widget': 'textarea',
+        "ui:widget": "textarea",
         editSchema: {
-          type: 'object',
+          type: "object",
           properties: {
-            title: { type: 'string', title: 'Label' },
-            description: { type: 'string', title: 'Example value' },
-            required: { type: 'boolean' },
+            title: {type: "string", title: "Label"},
+            description: {type: "string", title: "Example value"},
+            required: {type: "boolean"},
           },
         },
       },
       formData: {},
     },
     {
-      id: 'checkbox',
-      icon: 'check',
-      label: 'Checkbox',
+      id: "checkbox",
+      icon: "check",
+      label: "Checkbox",
       jsonSchema: {
-        type: 'boolean',
-        title: 'Edit me',
+        type: "boolean",
+        title: "Edit me",
         default: false,
       },
       uiSchema: {
         editSchema: {
-          type: 'object',
+          type: "object",
           properties: {
-            title: { type: 'string', title: 'Label' },
-            required: { type: 'boolean' },
+            title: {type: "string", title: "Label"},
+            required: {type: "boolean"},
           },
         },
       },
       formData: {},
     },
     {
-      id: 'multiple-checkbox',
-      icon: 'check',
-      label: 'Multiple choices',
+      id: "multiple-checkbox",
+      icon: "check",
+      label: "Multiple choices",
       jsonSchema: {
-        type: 'array',
-        title: 'A multiple choices list',
+        type: "array",
+        title: "A multiple choices list",
         items: {
-          type: 'string',
-          enum: ['choice 1', 'choice 2', 'choice 3'],
+          type: "string",
+          enum: ["choice 1", "choice 2", "choice 3"],
         },
         uniqueItems: true,
       },
       uiSchema: {
-        'ui:widget': 'checkboxes',
+        "ui:widget": "checkboxes",
         editSchema: {
-          type: 'object',
+          type: "object",
           properties: {
-            title: { type: 'string', title: 'Label' },
-            required: { type: 'boolean' },
+            title: {type: "string", title: "Label"},
+            required: {type: "boolean"},
             enum: {
-              type: 'array',
-              title: 'Choices',
+              type: "array",
+              title: "Choices",
               items: {
-                type: 'string',
+                type: "string"
               },
-              default: ['choice 1', 'choice 2', 'choice 3'],
+              default: ["choice 1", "choice 2", "choice 3"],
             },
           },
         },
@@ -100,55 +99,26 @@
       formData: {},
     },
     {
-      id: 'radiobuttonlist',
-      icon: 'list',
-      label: 'Choice list',
+      id: "radiobuttonlist",
+      icon: "list",
+      label: "Choice list",
       jsonSchema: {
-        type: 'string',
-        title: 'Edit me',
-        enum: ['option 1', 'option 2', 'option 3'],
+        type: "string",
+        title: "Edit me",
+        enum: ["option 1", "option 2", "option 3"],
       },
       uiSchema: {
-        'ui:widget': 'radio',
+        "ui:widget": "radio",
         editSchema: {
-          type: 'object',
+          type: "object",
           properties: {
-            title: { type: 'string', title: 'Label' },
-            required: { type: 'boolean' },
+            title: {type: "string", title: "Label"},
+            required: {type: "boolean"},
             enum: {
-              type: 'array',
-              title: 'Options',
+              type: "array",
+              title: "Options",
               items: {
-                type: 'string',
-              },
-            },
-          },
-        },
-      },
-      formData: {},
-    },
-    {
-      id: 'select',
-      icon: 'chevron-down',
-      label: 'Select List',
-      jsonSchema: {
-        type: 'string',
-        format: 'string',
-        title: 'Edit me',
-        enum: ['option 1', 'option 2', 'option 3'],
-      },
-      uiSchema: {
-        'ui:widget': 'select',
-        editSchema: {
-          type: 'object',
-          properties: {
-            title: { type: 'string', title: 'Label' },
-            required: { type: 'boolean' },
-            enum: {
-              type: 'array',
-              title: 'Options',
-              items: {
-                type: 'string',
+                type: "string",
               },
             },
           },
@@ -157,25 +127,55 @@
       formData: {},
     },
     {
-      id: 'date',
-      icon: 'calendar',
-      label: 'Date',
+      id: "select",
+      icon: "chevron-down",
+      label: "Select List",
       jsonSchema: {
-        type: 'string',
-        format: 'date',
-        title: 'Edit me',
+        type: "string",
+        format: "string",
+        title: "Edit me",
+        enum: ["option 1", "option 2", "option 3"],
       },
       uiSchema: {
-        'ui:widget': 'alt-date',
+        "ui:widget": "select",
         editSchema: {
-          type: 'object',
+          type: "object",
           properties: {
-            title: { type: 'string', title: 'Label' },
-            required: { type: 'boolean' },
+            title: {type: "string", title: "Label"},
+            required: {type: "boolean"},
+            enum: {
+              type: "array",
+              title: "Options",
+              items: {
+                type: "string"
+              },
+            },
           },
         },
       },
       formData: {},
     },
-}
-}
+    {
+      id: "date",
+      icon: "calendar",
+      label: "Date",
+      jsonSchema: {
+        type: "string",
+        format: "date",
+        title: "Edit me",
+      },
+      uiSchema: {
+        "ui:widget": "alt-date",
+        editSchema: {
+          type: "object",
+          properties: {
+            title: {type: "string", title: "Label"},
+            required: {type: "boolean"},
+          },
+        },
+      },
+      formData: {},
+    },
+  ]
+
+module.exports = FormSchema;

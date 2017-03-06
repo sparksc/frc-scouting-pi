@@ -6,6 +6,8 @@ Why is this needed? To ditch the pen and paper at competitions in favor of a fle
 
 The goal state of the app is to use the same application year-over-year with minimal changes to the code base when a new game is announced. The app can be used and customized by any team and for any FRC competition. Teams would have the choice to deploy the web app on a [Raspberry Pi](https://www.raspberrypi.org/about/) at a competition to have a portable private offline scouting webserver. Inspiration for the scouting forms comes from [Google Forms](https://www.google.com/forms/about/) because of its high customizability and ease of use.
 
+EXCUSE THE MESS... THIS IS STILL A WORK IN PROGRESS.
+
 # Installation
 
 ## Prerequisites
@@ -26,6 +28,10 @@ After the app has started, open [http://localhost:3000/](http://localhost:3000/)
 The app is configured for hot-reloading, so anytime you make an update to the code, the browser will automatically refresh with the latest update.
 
 The project is setup to use [Airbnb's Javascript Style Guide](https://github.com/airbnb/javascript) for consistency. For linting rules, refer to their style guide for details. For Markdown linting refer to [markdownlint](https://github.com/DavidAnson/markdownlint/blob/master/doc/Rules.md)'s guide.
+
+## Raspberry Pi Setup
+
+This section is still a work in progress. For more information on installing the database on a Raspberry Pi, refer to the [PouchDB-Setup docs](./docs/PouchDB-Setup.md).
 
 ## Usage
 
@@ -85,18 +91,28 @@ Notes from the [create-react-app](https://github.com/facebookincubator/create-re
 
 # Resources Used
 
+### Structure
+
 * [create-react-app](https://github.com/facebookincubator/create-react-app)
-* [formbuilder](https://github.com/Kinto/formbuilder)
-* [react-bootstrap](https://react-bootstrap.github.io/)
 * [react-router](https://github.com/ReactTraining/react-router)
+* [react-bootstrap](https://react-bootstrap.github.io/)
 * [react-router-bootstrap](https://github.com/react-bootstrap/react-router-bootstrap)
 * [Redux](http://redux.js.org/)
 * [create-react-pwa](https://github.com/jeffposnick/create-react-pwa)
+* [Material Icons](https://material.io/icons/)
+
+### Testing
+
 * [Jest](https://facebook.github.io/jest/)
 * [Enzyme](https://github.com/airbnb/enzyme)
 * [Flow](https://flowtype.org/)
+
+### Components/Helpers
+
 * [ESLint](http://eslint.org/)
 * [Airbnb Javascript Style Guide()](https://www.npmjs.com/package/eslint-config-airbnb)
 * [react-bootstrap-table](http://allenfang.github.io/react-bootstrap-table/index.html)
-* [react-images-uploader](https://github.com/aleksei0807/react-images-uploader)
 * [react-sortable-hoc](https://github.com/clauderic/react-sortable-hoc)
+* [Winterfell](https://github.com/andrewhathaway/Winterfell)
+* [react-images-uploader](https://github.com/aleksei0807/react-images-uploader)
+* [formbuilder](https://github.com/Kinto/formbuilder)

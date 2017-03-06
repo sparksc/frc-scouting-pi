@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ScoutingForm from '../components/Scouting/ScoutingForm';
+import ScoutingFormBuilder from '../components/Scouting/ScoutingFormBuilder';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<ScoutingForm />, div);
+  ReactDOM.render(<ScoutingFormBuilder />, div);
 });

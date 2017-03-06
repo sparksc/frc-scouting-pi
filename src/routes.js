@@ -24,7 +24,7 @@ const Routes = props => (
       <Route path="/scoutinghome/scoutingform" component={ScoutingForm} />
       <Route path="/scoutinghome/scoutingformbuilder" component={ScoutingFormBuilder} />
       <Route path="/teamviewer" component={TeamViewer} />
-      <Route path="/teamviewer/teamdetail" component={TeamDetail} />
+      <Route path="/teamviewer/:teamdetail" component={TeamDetail} />
       <Route path="/picklist" component={PickListHome} />
       <Route path="/dataviewer" component={DataViewer} />
       <Route path="*" component={NotFound} />
