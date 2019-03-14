@@ -12,9 +12,14 @@ EXCUSE THE MESS... THIS IS STILL A WORK IN PROGRESS.
 
 ## Prerequisites
 
-* Ensure Node.js (6 or later) and npm are installed. If not, Node can be installed from [here](https://nodejs.org/en/ "Node.js.org").
+* Preferred Method: [Vagrant](https://www.vagrantup.com/) is installed.
+* If not using Vagrant, ensure Node.js (6 or later) and npm are installed. If not, Node can be installed from [here](https://nodejs.org/en/ "Node.js.org").
 
 ## Quick Start
+
+If using Vagrant, see the [Vagrant Setup guide](./docs/Vagrant Setup.md) for instructions on how to use Vagrant.
+
+Below are the command to start running the app.
 
 ```bash
 git clone https://github.com/sparksc/frc-scouting-pi.git
